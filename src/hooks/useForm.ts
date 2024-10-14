@@ -1,6 +1,5 @@
-import { ChangeEvent, useState } from 'react';
-
-type FormChangeEvent = ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
+import { useState } from 'react';
+import { FormChangeEvent } from '../types';
 
 type UseFormReturn<T> = [T, (e: FormChangeEvent) => void];
 
